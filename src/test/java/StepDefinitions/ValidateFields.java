@@ -39,30 +39,37 @@ public class ValidateFields {
 	@And("get the value of from each textfield")
 	public void get_the_text_of_from_each_textfield() {
 		fields= new ValuesPage(driver);
-		ValuesPage.getValuesfromFields();
+		fields.getValuesfromFields();
 	}
 
 	@Then("verify count of values matches with {int}")
 	public void verify_count_of_values_matches_with(Integer int1) {
 		fields= new ValuesPage(driver);
+		fields.getValuesfromFields();
+		fields.GetValuesFromList();
 		fields.verifyElementPresentCount(int1);
 	}	
 
 	@Then("verify all the values grater than {int}")
 	public void verify_all_the_values_grater_than(Integer int2) {
 		fields= new ValuesPage(driver);
+		fields.getValuesfromFields();
+		fields.GetValuesFromList();
 		fields.CheckValues(int2);
 	}
 
 	@Then("perform a sum of all values")
 	public void perform_a_sum_of_all_values() {
 		fields= new ValuesPage(driver);
+		fields.getValuesfromFields();
+		fields.GetValuesFromList();
 		fields.CheckTotal();
 	}
 
 	@Then("Verify $ is present the extracted text")
 	public void verify_$_is_present_the_extracted_text() {
 		fields= new ValuesPage(driver);
+		fields.getValuesfromFields();
 		fields.CheckCurrencySymbol();
 	}
 	

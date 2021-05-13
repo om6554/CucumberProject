@@ -8,17 +8,17 @@ import org.openqa.selenium.WebDriver;
 
 public class ValuesPage {
 
-	static WebDriver driver;
+	WebDriver driver;
 	int elementCount = 0;
-	static ArrayList<String> intialList = new ArrayList<String>();
-	static ArrayList<Double> finalList = new ArrayList<Double>();
-	static By txt_value = By.xpath("//*[contains(@id,'txt_val_')]");
-	static By txt_value1 = By.id("txt_val_1");
-	static By txt_value2 = By.id("txt_val_2");
-	static By txt_value3 = By.id("txt_val_4");
-	static By txt_value4 = By.id("txt_val_5");
-	static By txt_value5 = By.id("txt_val_6");
-	static By txt_ttl_value = By.id("txt_ttl_val");
+	ArrayList<String> intialList = new ArrayList<String>();
+	ArrayList<Double> finalList = new ArrayList<Double>();
+	By txt_value = By.xpath("//*[contains(@id,'txt_val_')]");
+	By txt_value1 = By.id("txt_val_1");
+	By txt_value2 = By.id("txt_val_2");
+	By txt_value3 = By.id("txt_val_4");
+	By txt_value4 = By.id("txt_val_5");
+	By txt_value5 = By.id("txt_val_6");
+	By txt_ttl_value = By.id("txt_ttl_val");
 	By lbl_value1 = By.id("lbl_val_1");
 	By lbl_value2 = By.id("lbl_val_2");
 	By lbl_value3 = By.id("lbl_val_3");
@@ -42,10 +42,10 @@ public class ValuesPage {
 		}
 	}
 
-	public static void getValuesfromFields() {
+	public void getValuesfromFields() {
 
 		try {
-			
+			System.out.println("getValuesFromFields");
 			intialList.add(driver.findElement(txt_value1).getText());
 			intialList.add(driver.findElement(txt_value2).getText());
 			intialList.add(driver.findElement(txt_value3).getText());
@@ -55,21 +55,19 @@ public class ValuesPage {
 
 		} catch (Exception e) {
 			// TODO: handle exception
-			System.out.println("getValuesFromFields");			
 			e.printStackTrace();
 		}
 
 	}
 
-	public static void GetValuesFromList() {
+	public void GetValuesFromList() {
 		try {
-			
+			System.out.println("GetValuesFromList");
 			for (int i = 0; i < intialList.size(); i++) {
 				finalList.add(Double.parseDouble(intialList.get(i).replace("$", "")));
 			}
 		} catch (Exception e) {
 			// TODO: handle exception
-			System.out.println("GetValuesFromList");
 			e.printStackTrace();
 		}
 
