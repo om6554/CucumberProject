@@ -60,7 +60,7 @@ public class ValuesPage {
 
 	}
 
-	public void GetValuesFromList() {
+	public void getValuesFromList() {
 		try {
 			System.out.println("GetValuesFromList");
 			for (int i = 0; i < intialList.size(); i++) {
@@ -73,10 +73,8 @@ public class ValuesPage {
 
 	}
 
-	public void CheckValues(Integer int2) {
-		try {
-			this.getValuesfromFields();
-			this.GetValuesFromList();
+	public void checkValues(Integer int2) {
+		try {			
 			for (int i = 0; i <= finalList.size(); i++) {
 				Assert.assertTrue(finalList.get(i) > int2);
 			}
@@ -87,10 +85,8 @@ public class ValuesPage {
 
 	}
 
-	public void CheckTotal() {
-		try {
-			this.getValuesfromFields();
-			this.GetValuesFromList();
+	public void checkTotal() {
+		try {			
 			double ActualTotal = 0;
 			for (int i = 0; i < finalList.size() - 1; i++) {
 				ActualTotal = ActualTotal + finalList.get(i);
@@ -104,7 +100,7 @@ public class ValuesPage {
 
 	}
 
-	public void CheckCurrencySymbol() {
+	public void checkCurrencySymbol() {
 		try {
 			this.getValuesfromFields();
 			for (int i = 0; i < intialList.size(); i++) {
