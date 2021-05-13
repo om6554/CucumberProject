@@ -3,8 +3,53 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-05-12T11:34:49.090Z",
         "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4502000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user lanches browser",
+            "match": {
+              "location": "StepDefinitions.ValidateFields.user_lanches_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 146000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "maximizes the brower",
+            "match": {
+              "location": "StepDefinitions.ValidateFields.maximizes_the_brower()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 673000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Navigate to values page",
+            "match": {
+              "location": "StepDefinitions.ValidateFields.navigate_to_values_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-13T07:34:46.496Z",
+        "line": 9,
         "name": "verify the count of values appear on the screen",
         "description": "",
         "id": "validate-all-the-fileds-and-values-on-page-respectively;verify-the-count-of-values-appear-on-the-screen",
@@ -13,26 +58,229 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat StepDefinitions.ValidateFields.user_is_on_values_page(ValidateFields.java:11)\r\n\tat ✽.user is on values page(file:///C:/Users/jalla/Desktop/selenium/CucumberJava_MassMutual/src/test/resources/Features/validations.feature:4)\r\n",
-              "duration": 7000000,
-              "status": "pending"
+              "duration": 68000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verify count of values matches with 6",
+            "match": {
+              "arguments": [
+                {
+                  "val": "6",
+                  "offset": 36
+                }
+              ],
+              "location": "StepDefinitions.ValidateFields.verify_count_of_values_matches_with(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2600000000,
+              "status": "passed"
             },
             "line": 4,
-            "name": "user is on values page",
+            "name": "user lanches browser",
             "match": {
-              "location": "StepDefinitions.ValidateFields.user_is_on_values_page()"
+              "location": "StepDefinitions.ValidateFields.user_lanches_browser()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2000000,
-              "status": "skipped"
+              "duration": 223000000,
+              "status": "passed"
             },
             "line": 5,
-            "name": "should validate the fileds in a page",
+            "name": "maximizes the brower",
             "match": {
-              "location": "StepDefinitions.ValidateFields.should_validate_the_fileds_in_a_page()"
+              "location": "StepDefinitions.ValidateFields.maximizes_the_brower()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 786000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Navigate to values page",
+            "match": {
+              "location": "StepDefinitions.ValidateFields.navigate_to_values_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-13T07:34:52.054Z",
+        "line": 12,
+        "name": "verify values on the screen grater than 0",
+        "description": "",
+        "id": "validate-all-the-fileds-and-values-on-page-respectively;verify-values-on-the-screen-grater-than-0",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 385000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "verify all the values grater than 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 34
+                }
+              ],
+              "location": "StepDefinitions.ValidateFields.verify_all_the_values_grater_than(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2736000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user lanches browser",
+            "match": {
+              "location": "StepDefinitions.ValidateFields.user_lanches_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 727000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "maximizes the brower",
+            "match": {
+              "location": "StepDefinitions.ValidateFields.maximizes_the_brower()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 426000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Navigate to values page",
+            "match": {
+              "location": "StepDefinitions.ValidateFields.navigate_to_values_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-13T07:34:56.059Z",
+        "line": 15,
+        "name": "verify the total balance is correct based on the values listed on the screen",
+        "description": "",
+        "id": "validate-all-the-fileds-and-values-on-page-respectively;verify-the-total-balance-is-correct-based-on-the-values-listed-on-the-screen",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 591000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "verify the sum is equal to the total balance value field",
+            "match": {
+              "location": "StepDefinitions.ValidateFields.perform_a_sum_of_all_values()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3999000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user lanches browser",
+            "match": {
+              "location": "StepDefinitions.ValidateFields.user_lanches_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 240000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "maximizes the brower",
+            "match": {
+              "location": "StepDefinitions.ValidateFields.maximizes_the_brower()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 844000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Navigate to values page",
+            "match": {
+              "location": "StepDefinitions.ValidateFields.navigate_to_values_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-13T07:35:00.548Z",
+        "line": 18,
+        "name": "verify the values are formatted as currencies",
+        "description": "",
+        "id": "validate-all-the-fileds-and-values-on-page-respectively;verify-the-values-are-formatted-as-currencies",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 382000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Verify $ is present the extracted text",
+            "match": {
+              "location": "StepDefinitions.ValidateFields.verify_$_is_present_the_extracted_text()"
             },
             "keyword": "Then "
           }

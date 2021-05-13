@@ -1,8 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="1" tests="1" time="0.615">
-<testcase classname="Validate all the fileds and values on page respectively" name="verify the count of values appear on the screen" time="0.128">
-<skipped><![CDATA[Given user is on values page................................................pending
-Then should validate the fileds in a page...................................skipped
-]]></skipped>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="20.189">
+<testcase classname="Validate all the fileds and values on page respectively" name="verify the count of values appear on the screen" time="5.542">
+<system-out><![CDATA[Given user lanches browser..................................................passed
+Then maximizes the brower...................................................passed
+And Navigate to values page.................................................passed
+Then verify count of values matches with 6..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate all the fileds and values on page respectively" name="verify values on the screen grater than 0" time="4.001">
+<system-out><![CDATA[Given user lanches browser..................................................passed
+Then maximizes the brower...................................................passed
+And Navigate to values page.................................................passed
+Then verify all the values grater than 0....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate all the fileds and values on page respectively" name="verify the total balance is correct based on the values listed on the screen" time="4.485">
+<system-out><![CDATA[Given user lanches browser..................................................passed
+Then maximizes the brower...................................................passed
+And Navigate to values page.................................................passed
+Then verify the sum is equal to the total balance value field...............passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate all the fileds and values on page respectively" name="verify the values are formatted as currencies" time="5.465">
+<system-out><![CDATA[Given user lanches browser..................................................passed
+Then maximizes the brower...................................................passed
+And Navigate to values page.................................................passed
+Then Verify $ is present the extracted text.................................passed
+]]></system-out>
 </testcase>
 </testsuite>

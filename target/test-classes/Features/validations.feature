@@ -4,9 +4,9 @@ Feature: Validate all the fileds and values on page respectively
     Given user lanches browser
     Then maximizes the brower
     And Navigate to values page
-    And get all the values on the page
+    
 
-  Scenario: verify the count of values appear on the screen    
+Scenario: verify the count of values appear on the screen    
     Then  verify count of values matches with 6
 
   Scenario: verify values on the screen grater than 0     

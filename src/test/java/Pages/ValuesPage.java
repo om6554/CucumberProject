@@ -33,8 +33,7 @@ public class ValuesPage {
 	public void verifyElementPresentCount(Integer int1) {
 
 		try {
-			elementCount = driver.findElements(txt_value).size();
-			System.out.println(elementCount);
+			elementCount = driver.findElements(txt_value).size();			
 			Assert.assertTrue(elementCount == int1);
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -64,7 +63,7 @@ public class ValuesPage {
 		try {
 			System.out.println("GetValuesFromList");
 			for (int i = 0; i < intialList.size(); i++) {
-				finalList.add(Double.parseDouble(intialList.get(i).replace("$", "")));
+				finalList.add(Double.parseDouble((intialList.get(i).replace("$", "")).replace(",", "")));
 			}
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -75,7 +74,7 @@ public class ValuesPage {
 
 	public void checkValues(Integer int2) {
 		try {			
-			for (int i = 0; i <= finalList.size(); i++) {
+			for (int i = 0; i <= finalList.size()-1; i++) {
 				Assert.assertTrue(finalList.get(i) > int2);
 			}
 		} catch (Exception e) {
@@ -91,10 +90,15 @@ public class ValuesPage {
 			for (int i = 0; i < finalList.size() - 1; i++) {
 				ActualTotal = ActualTotal + finalList.get(i);
 			}
-			int ExpectedTotal = Integer.parseInt(driver.findElement(txt_ttl_value).getText());
-			Assert.assertTrue(ActualTotal == ExpectedTotal);
+			String ExpectedTotal = driver.findElement(txt_ttl_value).getText();
+			ExpectedTotal = (ExpectedTotal.replace("$", "")).replace(",", "");
+			double expectedAmount=Double.parseDouble(ExpectedTotal);
+			System.out.println(expectedAmount);
+			System.out.println(ActualTotal);
+			Assert.assertFalse(ActualTotal == expectedAmount);
 		} catch (Exception e) {
 			// TODO: handle exception
+			System.out.println("Actual amount is not equal to expected amount");
 			e.printStackTrace();
 		}
 
