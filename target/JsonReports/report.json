@@ -1,0 +1,49 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-12T11:34:49.090Z",
+        "line": 3,
+        "name": "verify the count of values appear on the screen",
+        "description": "",
+        "id": "validate-all-the-fileds-and-values-on-page-respectively;verify-the-count-of-values-appear-on-the-screen",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat StepDefinitions.ValidateFields.user_is_on_values_page(ValidateFields.java:11)\r\n\tat ✽.user is on values page(file:///C:/Users/jalla/Desktop/selenium/CucumberJava_MassMutual/src/test/resources/Features/validations.feature:4)\r\n",
+              "duration": 7000000,
+              "status": "pending"
+            },
+            "line": 4,
+            "name": "user is on values page",
+            "match": {
+              "location": "StepDefinitions.ValidateFields.user_is_on_values_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "should validate the fileds in a page",
+            "match": {
+              "location": "StepDefinitions.ValidateFields.should_validate_the_fileds_in_a_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validate all the fileds and values on page respectively",
+    "description": "",
+    "id": "validate-all-the-fileds-and-values-on-page-respectively",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/validations.feature",
+    "tags": []
+  }
+]
